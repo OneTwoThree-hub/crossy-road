@@ -141,8 +141,8 @@ game.onUpdateInterval(1000, function () {
         . . f f f f f 8 8 f f f f f 8 . 
         . . . f f f . . . . f f f f . . 
         . . . . . . . . . . . . . . . . 
-        `, 110, 0)
-    projectile.y = randint(120, 60)
+        `, 85, 0)
+    projectile.y = randint(85, 76)
     pojectile_2 = sprites.createProjectileFromSide(img`
         . . . . . . . . . . . . . . . . 
         . . . . 6 6 6 6 6 6 6 6 . . . . 
@@ -160,8 +160,8 @@ game.onUpdateInterval(1000, function () {
         . . f f f f f 8 8 f f f f f 8 . 
         . . . f f f . . . . f f f f . . 
         . . . . . . . . . . . . . . . . 
-        `, 80, 0)
-    pojectile_2.y = randint(120, 60)
+        `, 40, 0)
+    pojectile_2.y = randint(57, 20)
     projectile_3 = sprites.createProjectileFromSide(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . 3 3 3 3 3 3 3 3 . . 
@@ -180,5 +180,5 @@ game.onUpdateInterval(1000, function () {
         . . . . f f f f . . . . f f f . 
         . . . . . . . . . . . . . . . . 
         `, -150, 0)
-    projectile_3.y = randint(65, 0)
+    projectile_3.y = randint(50, 10)
 })
