@@ -133,24 +133,7 @@ scene.setBackgroundImage(img`
     6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
     6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
     `)
-mySprite = sprites.create(img`
-    . . . . . . f f f f . . . . . . 
-    . . . . f f e e e e f f . . . . 
-    . . . f e e e f f e e e f . . . 
-    . . f f f f f 2 2 f f f f f . . 
-    . . f f e 2 e 2 2 e 2 e f f . . 
-    . . f e 2 f 2 f f 2 f 2 e f . . 
-    . . f f f 2 2 e e 2 2 f f f . . 
-    . f f e f 2 f e e f 2 f e f f . 
-    . f e e f f e e e e f e e e f . 
-    . . f e e e e e e e e e e f . . 
-    . . . f e e e e e e e e f . . . 
-    . . e 4 f f f f f f f f 4 e . . 
-    . . 4 d f 2 2 2 2 2 2 f d 4 . . 
-    . . 4 4 f 4 4 4 4 4 4 f 4 4 . . 
-    . . . . . f f f f f f . . . . . 
-    . . . . . f f . . f f . . . . . 
-    `, SpriteKind.Player)
+mySprite = sprites.create(assets.image`Turtle_MySprite`, SpriteKind.Player)
 mySprite.x = 80
 mySprite.y = 120
 mySprite.say("Gotta Cross the road!")
@@ -176,20 +159,20 @@ game.onUpdateInterval(5000, function () {
     projectile.y = randint(85, 76)
     pojectile_2 = sprites.createProjectileFromSide(img`
         . . . . . . . . . . . . . . . . 
-        . . . . 6 6 6 6 6 6 6 6 . . . . 
-        . . . 6 9 6 6 6 6 6 6 c 6 . . . 
-        . . 6 c 9 6 6 6 6 6 6 c c 6 . . 
-        . 6 c c 9 9 9 9 9 9 6 c c 9 6 d 
-        . 6 c 6 8 8 8 8 8 8 8 b c 9 6 6 
-        . 6 6 8 b b 8 b b b 8 8 b 9 6 6 
-        . 6 8 b b b 8 b b b b 8 6 6 6 6 
-        . 8 8 6 6 6 8 6 6 6 6 6 8 6 6 6 
-        . 8 8 8 8 8 8 f 8 8 8 f 8 6 d d 
-        . 8 8 8 8 8 8 f 8 8 f 8 8 8 6 d 
-        . 8 8 8 8 8 8 f f f 8 8 8 8 8 8 
-        . 8 f f f f 8 8 8 8 f f f 8 8 8 
-        . . f f f f f 8 8 f f f f f 8 . 
-        . . . f f f . . . . f f f f . . 
+        . . . . 4 4 4 4 4 4 4 4 . . . . 
+        . . . 4 1 4 4 4 4 4 4 f 4 . . . 
+        . . 4 f 1 4 4 4 4 4 4 f f 4 . . 
+        . 4 f f 1 1 1 1 1 1 4 f f 1 4 5 
+        . 4 f 4 e e e e e e e f f 1 4 4 
+        . 4 4 e f f e f f f e e f 1 4 4 
+        . 4 e f f f e f f f f e 4 4 4 4 
+        . e e 4 4 4 e 4 4 4 4 4 e 4 4 4 
+        . e e e e e e f e e e f e 4 5 5 
+        . 5 e e e e e f e e f e e e 4 5 
+        . 5 e e e e e f f f e e e e e e 
+        . e f f f f e e e e f f f f e e 
+        . . f f 4 f f e e f f 4 f f e . 
+        . . . f f f . . . . f f f . . . 
         . . . . . . . . . . . . . . . . 
         `, 40, 0)
     pojectile_2.y = randint(57, 20)
@@ -216,76 +199,8 @@ game.onUpdateInterval(5000, function () {
 forever(function () {
     animation.runImageAnimation(
     mySprite,
-    [img`
-        . . . . . . f f f f . . . . . . 
-        . . . . f f e e e e f f . . . . 
-        . . . f e e e f f e e e f . . . 
-        . . f f f f f 2 2 f f f f f . . 
-        . . f f e 2 e 2 2 e 2 e f f . . 
-        . . f e 2 f 2 f f 2 f 2 e f . . 
-        . . f f f 2 2 e e 2 2 f f f . . 
-        . f f e f 2 f e e f 2 f e f f . 
-        . f e e f f e e e e f e e e f . 
-        . . f e e e e e e e e e e f . . 
-        . . . f e e e e e e e e f . . . 
-        . . e 4 f f f f f f f f 4 e . . 
-        . . 4 d f 2 2 2 2 2 2 f d 4 . . 
-        . . 4 4 f 4 4 4 4 4 4 f 4 4 . . 
-        . . . . . f f f f f f . . . . . 
-        . . . . . f f . . f f . . . . . 
-        `,img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . f f f f . . . . . . 
-        . . . . f f e e e e f f . . . . 
-        . . . f e e e f f e e e f . . . 
-        . . . f f f f 2 2 f f f f . . . 
-        . . f f e 2 e 2 2 e 2 e f f . . 
-        . . f e 2 f 2 f f f 2 f e f . . 
-        . . f f f 2 f e e 2 2 f f f . . 
-        . . f e 2 f f e e 2 f e e f . . 
-        . f f e f f e e e f e e e f f . 
-        . f f e e e e e e e e e e f f . 
-        . . . f e e e e e e e e f . . . 
-        . . . e f f f f f f f f 4 e . . 
-        . . . 4 f 2 2 2 2 2 e d d 4 . . 
-        . . . e f f f f f f e e 4 . . . 
-        . . . . f f f . . . . . . . . . 
-        `,img`
-        . . . . . . f f f f . . . . . . 
-        . . . . f f e e e e f f . . . . 
-        . . . f e e e f f e e e f . . . 
-        . . f f f f f 2 2 f f f f f . . 
-        . . f f e 2 e 2 2 e 2 e f f . . 
-        . . f e 2 f 2 f f 2 f 2 e f . . 
-        . . f f f 2 2 e e 2 2 f f f . . 
-        . f f e f 2 f e e f 2 f e f f . 
-        . f e e f f e e e e f e e e f . 
-        . . f e e e e e e e e e e f . . 
-        . . . f e e e e e e e e f . . . 
-        . . e 4 f f f f f f f f 4 e . . 
-        . . 4 d f 2 2 2 2 2 2 f d 4 . . 
-        . . 4 4 f 4 4 4 4 4 4 f 4 4 . . 
-        . . . . . f f f f f f . . . . . 
-        . . . . . f f . . f f . . . . . 
-        `,img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . f f f f . . . . . . 
-        . . . . f f e e e e f f . . . . 
-        . . . f e e e f f e e e f . . . 
-        . . . f f f f 2 2 f f f f . . . 
-        . . f f e 2 e 2 2 e 2 e f f . . 
-        . . f e f 2 f f f 2 f 2 e f . . 
-        . . f f f 2 2 e e f 2 f f f . . 
-        . . f e e f 2 e e f f 2 e f . . 
-        . f f e e e f e e e f f e f f . 
-        . f f e e e e e e e e e e f f . 
-        . . . f e e e e e e e e f . . . 
-        . . e 4 f f f f f f f f e . . . 
-        . . 4 d d e 2 2 2 2 2 f 4 . . . 
-        . . . 4 e e f f f f f f e . . . 
-        . . . . . . . . . f f f . . . . 
-        `],
-    500,
+    assets.animation`myAnim`,
+    200,
     true
     )
 })

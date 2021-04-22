@@ -1,0 +1,24 @@
+{
+    "image1": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage"
+    },
+    "image2": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdwAAAAAABwBwd+7m7ncHAABnZu7mfgCAB+5mZmZuAHd3bmZubu4Hd3fu5uZm5neAB+ZmZmbuAAAA5+7m7n4AAHB35m7udwcAdwAAAAAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Turtle_MySprite"
+    },
+    "anim1": {
+        "namespace": "myAnimations",
+        "id": "anim1",
+        "mimeType": "application/mkcd-animation",
+        "data": "YzgwMDEwMDAxMDAwMDEwMDAwMDAwMDcwMDcwMDAwMDAwMDAwMDA3ODg3MDAwMDAwMDA3MDAwNzc3NzAwMDcwMDAwNzAwNzcwMDc3MDA3MDAwMDAwNzdlZTZlNzcwMDAwMDAwMDY3NmVlZTdlMDAwMDAwMDA2ZTY2NjY2ZTAwMDAwMDAwNmU2NjZlZWUwMDAwMDAwMGU2ZTY2NmU2MDAwMDAwMDBlZTY2NmU2ZTAwMDAwMDAwNmVlNjY2ZWUwMDAwMDAwMGVlNjY2NmVlMDAwMDAwMDBlN2VlZTY3ZTAwMDAwMDAwNzdlNmVlNzcwMDAwMDA3MDA3NzAwNzcwMDcwMDAwMDAwMDAwMDcwMDAwMDA=",
+        "displayName": "myAnim"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
