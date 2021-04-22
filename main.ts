@@ -1,6 +1,3 @@
-controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
-	
-})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
     info.changeLifeBy(-1)
 })
@@ -38,7 +35,7 @@ game.onUpdateInterval(2000, function () {
         . . f f f f f 8 8 f f f f f 8 . 
         . . . f f f . . . . f f f f . . 
         . . . . . . . . . . . . . . . . 
-        `, 85, 0)
+        `, 60, 0)
     projectile.y = randint(85, 76)
     projectile = sprites.createProjectileFromSide(img`
         . . . . . . . . . . . . . . . . 
@@ -57,7 +54,7 @@ game.onUpdateInterval(2000, function () {
         . . . e f f f f f e e f f f f f 
         . . . . f f f f . . . . f f f . 
         . . . . . . . . . . . . . . . . 
-        `, -60, 0)
+        `, -80, 0)
     projectile.y = randint(80, 78)
     pojectile_2 = sprites.createProjectileFromSide(img`
         . . . . . . . . . . . . . . . . 
@@ -76,7 +73,7 @@ game.onUpdateInterval(2000, function () {
         . . f f 4 f f e e f f 4 f f e . 
         . . . f f f . . . . f f f . . . 
         . . . . . . . . . . . . . . . . 
-        `, 40, 0)
+        `, 180, 0)
     pojectile_2.y = randint(57, 20)
     projectile_3 = sprites.createProjectileFromSide(img`
         . . . . . . . . . . . . . . . . 
@@ -95,7 +92,7 @@ game.onUpdateInterval(2000, function () {
         . . . a f f f f f a a f f f f f 
         . . . . f f f f . . . . f f f . 
         . . . . . . . . . . . . . . . . 
-        `, -150, 0)
+        `, -140, 0)
     projectile_3.y = randint(50, 10)
 })
 forever(function () {
