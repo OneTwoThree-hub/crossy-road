@@ -4,7 +4,8 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
     pause(100)
     scene.cameraShake(4, 100)
-    pause(100)
+    pause(1000)
+    mySprite.say("\"Thank You!\"", 2000)
     info.changeLifeBy(-1)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
@@ -16,8 +17,9 @@ sprites.onCreated(SpriteKind.Player, function (sprite) {
 let projectile_3: Sprite = null
 let pojectile_2: Sprite = null
 let projectile: Sprite = null
+let mySprite: Sprite = null
 scene.setBackgroundImage(assets.image`Highway`)
-let mySprite = sprites.create(assets.image`Turtle_MySprite`, SpriteKind.Player)
+mySprite = sprites.create(assets.image`Turtle_MySprite`, SpriteKind.Player)
 controller.moveSprite(mySprite, 100, 100)
 mySprite.x = 80
 mySprite.y = 120
