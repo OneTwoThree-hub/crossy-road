@@ -2,13 +2,12 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     game.reset()
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
-    pause(100)
+    pause(200)
     scene.cameraShake(4, 100)
-    pause(1000)
-    mySprite.say("\"Thank You!\"", 2000)
     info.changeLifeBy(-1)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
+    mySprite.say("\"Thank You!\"", 2000)
     game.over(true)
 })
 sprites.onCreated(SpriteKind.Player, function (sprite) {
@@ -46,8 +45,8 @@ game.onUpdateInterval(2000, function () {
         . . f f f f f 8 8 f f f f f 8 . 
         . . . f f f . . . . f f f f . . 
         . . . . . . . . . . . . . . . . 
-        `, 60, 0)
-    projectile.y = randint(85, 76)
+        `, 50, 0)
+    projectile.y = randint(83, 74)
     projectile = sprites.createProjectileFromSide(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . 2 2 2 2 2 2 2 2 . . 
@@ -67,6 +66,25 @@ game.onUpdateInterval(2000, function () {
         . . . . . . . . . . . . . . . . 
         `, -80, 0)
     projectile.y = randint(80, 78)
+    projectile = sprites.createProjectileFromSide(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . 6 6 6 6 6 6 6 6 . . . . 
+        . . . 6 9 6 6 6 6 6 6 c 6 . . . 
+        . . 6 c 9 6 6 6 6 6 6 c c 6 . . 
+        . 6 c c 9 9 9 9 9 9 6 c c 9 6 d 
+        . 6 c 6 8 8 8 8 8 8 8 b c 9 6 6 
+        . 6 6 8 b b 8 b b b 8 8 b 9 6 6 
+        . 6 8 b b b 8 b b b b 8 6 6 6 6 
+        . 8 8 6 6 6 8 6 6 6 6 6 8 6 6 6 
+        . 8 8 8 8 8 8 f 8 8 8 f 8 6 d d 
+        . 8 8 8 8 8 8 f 8 8 f 8 8 8 6 d 
+        . 8 8 8 8 8 8 f f f 8 8 8 8 8 8 
+        . 8 f f f f 8 8 8 8 f f f 8 8 8 
+        . . f f f f f 8 8 f f f f f 8 . 
+        . . . f f f . . . . f f f f . . 
+        . . . . . . . . . . . . . . . . 
+        `, 70, 0)
+    projectile.y = randint(87, 78)
     pojectile_2 = sprites.createProjectileFromSide(img`
         . . . . . . . . . . . . . . . . 
         . . . . 4 4 4 4 4 4 4 4 . . . . 

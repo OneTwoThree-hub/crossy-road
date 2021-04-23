@@ -41,6 +41,17 @@ namespace myImages {
 . . . 7 7 . . 7 7 . . 7 7 . . . 
 . . . . . . . . 7 . . . . . . . 
 `;
+            case "image3":
+            case "End":return img`
+. . . . . f f f f f . . . . . . 
+. . f f f f c c c c f f f f f . 
+. f f c c c c c c c c c c f f . 
+f c c c c 8 7 8 c 8 7 8 c c f f 
+f c c c c 7 7 7 c 7 7 7 c c f f 
+. f f e e 7 c c c 7 c c c f f . 
+. . f f f f e e 7 c f f f f . . 
+. . . . . f f f f f f . . . . . 
+`;
             case "k^huEvwigV60,i|aC_*q":
             case "Highway":return img`
 dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
@@ -103,8 +114,8 @@ ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
@@ -163,17 +174,6 @@ d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666
 d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666
 d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666
 dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-`;
-            case "image3":
-            case "End":return img`
-. . . . . f f f f f . . . . . . 
-. . f f f f c c c c f f f f f . 
-. f f c c c c c c c c c c f f . 
-f c c c c 8 7 8 c 8 7 8 c c f f 
-f c c c c 7 7 7 c 7 7 7 c c f f 
-. f f e e 7 c c c 7 c c c f f . 
-. . f f f f e e 7 c f f f f . . 
-. . . . . f f f f f f . . . . . 
 `;
         }
         return null;
