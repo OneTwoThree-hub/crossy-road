@@ -25,7 +25,7 @@ let mySprite2 = sprites.create(assets.image`End`, SpriteKind.Food)
 mySprite2.setPosition(randint(20, 120), randint(0, 5))
 mySprite2.setStayInScreen(true)
 mySprite.setStayInScreen(true)
-mySprite.say("Gotta Cross the road!", 2000)
+mySprite.say("Gotta Cross the road!", 1000)
 game.onUpdateInterval(2000, function () {
     projectile = sprites.createProjectileFromSide(img`
         . . . . . . . . . . . . . . . . 
