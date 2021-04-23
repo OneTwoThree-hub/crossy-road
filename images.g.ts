@@ -164,6 +164,17 @@ d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666
 d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666d666
 dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 `;
+            case "image3":
+            case "End":return img`
+. . . . . f f f f f . . . . . . 
+. . f f f f c c c c f f f f f . 
+. f f c c c c c c c c c c f f . 
+f c c c c 8 7 8 c 8 7 8 c c f f 
+f c c c c 7 7 7 c 7 7 7 c c f f 
+. f f e e 7 c c c 7 c c c f f . 
+. . f f f f e e 7 c f f f f . . 
+. . . . . f f f f f f . . . . . 
+`;
         }
         return null;
     })

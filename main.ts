@@ -1,8 +1,14 @@
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    game.reset()
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
+    pause(100)
+    scene.cameraShake(4, 100)
+    pause(100)
     info.changeLifeBy(-1)
 })
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
-	
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
+    game.over(true)
 })
 sprites.onCreated(SpriteKind.Player, function (sprite) {
     info.setLife(1)
@@ -15,6 +21,9 @@ let mySprite = sprites.create(assets.image`Turtle_MySprite`, SpriteKind.Player)
 controller.moveSprite(mySprite, 100, 100)
 mySprite.x = 80
 mySprite.y = 120
+let mySprite2 = sprites.create(assets.image`End`, SpriteKind.Food)
+mySprite2.setPosition(randint(20, 120), randint(0, 5))
+mySprite2.setStayInScreen(true)
 mySprite.setStayInScreen(true)
 mySprite.say("Gotta Cross the road!")
 game.onUpdateInterval(2000, function () {
